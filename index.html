@@ -4,26 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Data Science Lab - JupyterLite</title>
-  <!-- Include the necessary JupyterLite styles -->
-  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <div id="jupyterlite-container"></div> <!-- Container where JupyterLite will mount -->
+  <script type="module">
+    import { main } from './lab/index.js';  // Ensure this path is correct to your JupyterLite build
 
-  <!-- Include the necessary JupyterLite application JavaScript -->
-  <script src="application.js"></script>
-
-  <script>
-    // Initialize JupyterLite with the appropriate settings
-    window.onload = () => {
-      const app = new JupyterLite.App({
-        container: document.getElementById('jupyterlite-container'),
-        config: {
-          // Additional configuration options if necessary
-        }
-      });
-      app.start();
-    };
+    // Start JupyterLite Lab
+    main();
   </script>
 </body>
 </html>
