@@ -36,7 +36,7 @@
       "./pypi/thefuzz-*.tgz",
       "./pypi/scipy-*.tgz",
       "./pypi/scikit_learn-*.tgz",
-      "./pypi/pymysql-1.1.0-py3-none-any.tgz"
+      "./pypi/pymysql-*.tgz"
     ]
   }
 }
