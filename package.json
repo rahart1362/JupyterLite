@@ -1,0 +1,27 @@
+{
+  "name": "jupyterlite-project",
+  "version": "0.6.0a2",
+  "description": "JupyterLite project with federated extensions",
+  "main": "index.js",
+  "scripts": {
+    "start": "jupyter lite build",
+    "build": "jupyter lite build"
+  },
+  "dependencies": {
+    "@jupyterlite/plugin-manager-extension": "^0.6.0a2",
+    "@jupyterlite/contents": "^0.6.0a2",
+    "@jupyterlite/server-extension": "^0.6.0a2",
+    "@jupyterlite/pyodide-kernel-extension": "^0.6.0a2",
+    "@jupyterlab/apputils-extension": "^3.0.0",
+    "@jupyterlab/notebook-extension": "^3.0.0",
+    "@jupyterlab/filebrowser-extension": "^3.0.0",
+    "@jupyterlab/terminal-extension": "^3.0.0",
+    "@jupyterlab/plotly-extension": "^3.0.0",
+    "@jupyterlab/git-extension": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^4.0.0"
+  }
+}
