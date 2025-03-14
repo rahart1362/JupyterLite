@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <title>JupyterLite Lab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Style folders dont exist    <link rel="icon" type="image/x-icon" href="../style/favicon.ico">
-    <link rel="stylesheet" href="../style/index.css">  -->
+    <!-- Optional: Add favicon and styles later if needed
+    <link rel="icon" type="image/x-icon" href="../style/favicon.ico">
+    <link rel="stylesheet" href="../style/index.css">
+    -->
 </head>
 <body>
     <div id="jupyterlab"></div>
-    <script src="./lab/index.js"></script>
+    
+    <!-- Correct way to load ES module -->
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
