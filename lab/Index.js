@@ -4,10 +4,10 @@
     const { JupyterLiteApp } = await import('@jupyterlite/application');
 
     // Load the necessary plugins.
-//    const pluginManager = await import('@jupyterlite/plugin-manager-extension');
-//    const contents = await import('@jupyterlite/contents');
-//    const server = await import('@jupyterlite/server-extension');
-//    const pyodideKernel = await import('@jupyterlite/pyodide-kernel-extension');
+    const pluginManager = await import('@jupyterlite/plugin-manager-extension');
+    const contents = await import('@jupyterlite/contents');
+    const server = await import('@jupyterlite/server-extension');
+    const pyodideKernel = await import('@jupyterlite/pyodide-kernel-extension');
 
     // Load federated extensions.
     const apputils = await import('./extensions/@jupyterlab/apputils-extension');
