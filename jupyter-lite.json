@@ -16,6 +16,9 @@
       { "name": "./lab/extensions/@jupyterlab/toc-extension", "load": true },
       { "name": "./lab/extensions/@jupyterlab/vega5-extension", "load": true },
       { "name": "./lab/extensions/@jupyterlab/git-extension", "load": true },
+      { "name": "./lab/extensions/@jupyterlite/plugin-manager-extension", "load": true },
+      { "name": "./lab/extensions/@jupyterlite/contents", "load": true },
+      { "name": "./lab/extensions/@jupyterlite/server-extension", "load": true },
       { "name": "./lab/extensions/@jupyterlite/pyodide-kernel-extension", "load": true }
     ]
   },
