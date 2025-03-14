@@ -1,26 +1,29 @@
 {
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "federated_extensions": [
+      { "name": "./extensions/@jupyterlab/apputils-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/notebook-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/console-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/filebrowser-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/terminal-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/docmanager-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/ui-components-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/csvviewer-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/markdownviewer-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/plotly-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/mathjax2-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/toc-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/vega5-extension", "load": true },
+      { "name": "./extensions/@jupyterlab/git-extension", "load": true }
+    ]
+  },
   "litePlugins": {
     "@jupyterlite/plugin-manager-extension": true,
     "@jupyterlite/contents": true,
     "@jupyterlite/server-extension": true,
     "@jupyterlite/pyodide-kernel-extension": true
   },
-  "federated_extensions": [
-    "./extensions/@jupyterlab/apputils-extension",
-    "./extensions/@jupyterlab/notebook-extension",
-    "./extensions/@jupyterlab/console-extension",
-    "./extensions/@jupyterlab/filebrowser-extension",
-    "./extensions/@jupyterlab/terminal-extension",
-    "./extensions/@jupyterlab/docmanager-extension",
-    "./extensions/@jupyterlab/ui-components-extension",
-    "./extensions/@jupyterlab/csvviewer-extension",
-    "./extensions/@jupyterlab/markdownviewer-extension",
-    "./extensions/@jupyterlab/plotly-extension",
-    "./extensions/@jupyterlab/mathjax2-extension",
-    "./extensions/@jupyterlab/toc-extension",
-    "./extensions/@jupyterlab/vega5-extension",
-    "./extensions/@jupyterlab/git-extension"
-  ],
   "pyodide": {
     "pipliteUrls": [
       "./pypi/numpy-*.tgz",
@@ -38,5 +41,7 @@
       "./pypi/scikit_learn-*.tgz",
       "./pypi/pymysql-*.tgz"
     ]
-  }
+  },
+  "lite-plugin-settings": {},
+  "files": []
 }
