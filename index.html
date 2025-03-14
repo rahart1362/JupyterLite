@@ -1,12 +1,29 @@
-Index.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Data Science Lab - JupyterLite</title>
-  <link rel="stylesheet" href="./style.css">
+  <!-- Include the necessary JupyterLite styles -->
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <script src="./application.js"></script>
+  <div id="jupyterlite-container"></div> <!-- Container where JupyterLite will mount -->
+
+  <!-- Include the necessary JupyterLite application JavaScript -->
+  <script src="application.js"></script>
+
+  <script>
+    // Initialize JupyterLite with the appropriate settings
+    window.onload = () => {
+      const app = new JupyterLite.App({
+        container: document.getElementById('jupyterlite-container'),
+        config: {
+          // Additional configuration options if necessary
+        }
+      });
+      app.start();
+    };
+  </script>
 </body>
 </html>
